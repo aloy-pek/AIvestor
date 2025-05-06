@@ -1,0 +1,17 @@
+#login-button {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#login-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #login-button {
+        display: none !important;
+    }
+}

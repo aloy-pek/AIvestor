@@ -1,0 +1,141 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    height: 76vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.lefttext-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    margin: 0 1% 0 0;
+    padding: 0;
+}
+
+#lefttext {
+    font-family: "Tienne", sans-serif;
+    font-size: 125%;
+    font-weight: 500;
+    padding: 20% 0 0 5%;
+    color: black;
+}
+
+.rightpicture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    height: 80%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#loginimage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#description {
+    margin: 0 0 5% 0;
+    color: rgba(75, 75, 75, 0.952);
+}
+
+#welcome {
+    margin: 0 0 1% 0;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        height: auto;
+        min-height: 76vh;
+        width: 100%;
+        margin: 10% 0 0 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .lefttext-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin: 5% 0;
+        padding: 0;
+    }
+
+    #lefttext {
+        font-size: clamp(0.9rem, 2.5vw, 1.5rem) !important;
+        padding: 1% 0 0 0;
+        text-align: center;
+    }
+
+    #description {
+        margin: 0 0 5% 0;
+        text-align: center;
+    }
+
+    .navbuttons {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        margin: 5% 0 0 0;
+        height: 15vh;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .login-form
+    .register-form {
+        width: 90%;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .register-form input[type="text"],
+    .register-form input[type="password"] {
+        width: 80%;
+    }
+
+    .login-form button[type="submit"],
+    .register-form button[type="submit"],
+    .profile-form button[type="submit"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: clamp(0.7rem, 2.5vw, 1.5rem);
+    }
+
+    #login-text,
+    #profile-text,
+    #register-text {
+        font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    }
+
+}

@@ -1,0 +1,25 @@
+#center-login-button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 5% 10%;
+    margin: 0 0 0 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#center-login-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #center-login-button {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: clamp(0.6rem, 2.5vw, 1.5rem);
+        padding-top: clamp(0.6rem, 2.5vw, 1.5rem);
+        font-size: clamp(0.6rem, 2.5vw, 1.5rem);
+    }
+}

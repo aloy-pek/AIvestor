@@ -1,0 +1,26 @@
+.navbuttons {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Tienne", sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    font-size: 100%;
+    transition: background-color 0.3s ease;
+    padding: 30% 30%;
+}
+
+.navbuttons:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    border-radius: 10px;
+}
+
+@media(max-width: 768px) {
+    .navbuttons {
+        padding: 10% 3%;
+        margin-right: 0;
+    }
+}
