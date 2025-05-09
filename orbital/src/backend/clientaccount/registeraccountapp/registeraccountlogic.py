@@ -24,9 +24,14 @@ class RegisterAccountLogic(serializers.ModelSerializer):
         instance.save()
         return instance
     
-    def valdiate_username(self, value):
+    def validate_username(self, value):
         if AccountDatabase.objects.filter(username=value).exists(): # forces unqiueness of username
             raise serializers.ValidationError("Username already exists.")
+        return value
+    
+    def validate_email(self, value):
+        if AccountDatabase.objects.filter(email=value).exists(): # forces uniquess of email
+            raise serializers.ValidationError("Email already exists.")
         return value
     
     def validate_password(self, value):
