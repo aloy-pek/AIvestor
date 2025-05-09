@@ -3,7 +3,7 @@ import "../componentscss/formcss/registerform.css";
 
 function RegisterForm() {
     const [formData, setFormData] = useState(
-        { username: "", password: "", confirmPassword: "" }
+        { username: "", email: "", password: "", confirmPassword: "" }
     );
     
     const handleChange = (e) => {
@@ -23,6 +23,14 @@ function RegisterForm() {
                 name="username"
                 placeholder="Username"
                 value={formData.username}
+                onChange={handleChange}
+                required />
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
                 onChange={handleChange}
                 required />
 

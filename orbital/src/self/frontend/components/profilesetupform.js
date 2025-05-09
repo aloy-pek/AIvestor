@@ -25,13 +25,6 @@ function ProfileSetupForm() {
                 onChange={handleChange}
                 required />
 
-            <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                required />
             <button type="submit">Setup Profile</button>
         </form>
     );

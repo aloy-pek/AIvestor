@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import LandingPage from './self/page/landingpage';
-import LoginPage from './self/page/loginpage';
-import RegisterPage from './self/page/registerpage';
-import ProfileSetUpPage from './self/page/profilesetuppage';
+import LandingPage from './self/frontend/page/landingpage';
+import LoginPage from './self/frontend/page/loginpage';
+import RegisterPage from './self/frontend/page/registerpage';
+import ProfileSetUpPage from './self/frontend/page/profilesetuppage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
