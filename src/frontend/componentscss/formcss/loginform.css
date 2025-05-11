@@ -1,5 +1,6 @@
 .login-container {
     display: flex;
+    flex-direction: column;
     height: 76vh;
     width: 100%;
     justify-content: center;
@@ -66,6 +67,11 @@
     font-family: "Tienne", sans-serif;
 }
 
+#successfulregistration {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
     .login-container {
         margin-top: 30%;
@@ -92,5 +98,9 @@
     .login-form button[type="submit"] {
         width: 80%;
         font-size: 0.9rem;
+    }
+
+    #successfulregistration {
+        font-size: 100%;
     }
 }

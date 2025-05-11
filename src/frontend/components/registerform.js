@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import React, { useState } from 'react';
 import "../componentscss/formcss/registerform.css";
 
 function RegisterForm() {
+    const navigate = useNavigate();
+
     const [formData, setFormData] = useState(
         { username: "", email: "", password: "", confirmPassword: "" }
     );
@@ -14,6 +17,7 @@ function RegisterForm() {
     const handleSubmit = async (e) => {
         e.preventDefault(); //prevents empty submission of form
         //additional front end password validation
+
         if (formData.password !== formData.confirm_password) {
             alert("Passwords do not match");
             return;
@@ -36,7 +40,7 @@ function RegisterForm() {
             });
 
             if (response.ok) {
-                alert("Registration successful");
+                navigate("/loginpage", {state: {successfulRegistration: true } })
             } else {
                 const error = await response.json();
                 let errorMessage = "Registration failed";
